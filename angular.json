@@ -30,8 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "src/styles.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+          ],
             "scripts": []
           },
           "configurations": {
@@ -93,12 +95,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "bootstrap/scss/bootstrap.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "149cc64d-2027-4fef-b26e-928adefef2ff"
   }
 }

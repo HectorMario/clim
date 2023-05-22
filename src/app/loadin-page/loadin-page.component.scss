@@ -1,0 +1,54 @@
+@import "../../assets/colors.scss";
+.background {
+  height: 100vh;
+  background-image: url(../../assets/img/marek-szturc-4CDdd1RCt6w-unsplash.jpg);
+  background-size: cover;
+  .circle {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+
+    @keyframes ring {
+      0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #01b2b2;
+      }
+      50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #b20195;
+      }
+      100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #e65c00;
+      }
+    }
+    &:before {
+      position: absolute;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+      height: 100%;
+      width: 100%;
+      content: "";
+      border-radius: 50%;
+    }
+  }
+  .animation {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 200px;
+    animation: text 3s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    @keyframes text {
+        0% {
+            font-size: 30px;
+        }
+        50% {
+            font-size: 50px;
+        }
+        100% {
+            font-size: 30px;
+        }
+    }
+  }
+}

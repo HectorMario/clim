@@ -1,0 +1,93 @@
+@import '../assets/colors.scss';
+
+.primary{
+    background-color: $primary;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    li{
+        margin-top: 10px;
+    }
+}
+
+.sun{
+    background-image: url(../assets/img/frank-mckenna-eXHeq48Z-Q4-unsplash.jpg);
+    background-size: cover;
+}
+
+.night{
+    background-image: url(../assets/img/benjamin-sow-QjR_snVQn4c-unsplash.jpg);
+    background-size: cover;
+}
+
+.morning{
+    background-image: url(../assets/img/wojciech-swiech-SZ9jmeD9jIg-unsplash.jpg);
+    background-size: cover;
+}
+
+.twilight{
+    background-size: cover;
+    background-image: url(../assets/img/michael-diane-weidner-h-rP5KSC2W0-unsplash.jpg);
+}
+
+.dark{
+    background-image: url(../assets/img/chan-hoi-uj-w-v7OFT4-unsplash.jpg);
+    background-size: cover;
+}
+
+.chance-color{
+    color: $primary;
+}
+
+.white{
+    color: #fff;
+}
+
+div.full-screen{
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    padding: 0;
+    .city{
+        width: 60%;
+        .info{
+            .temp{
+                font-size: calc(5rem + 5vh);
+            }
+            .date{
+                .city-name{
+                    font-size: calc(2rem + 3vh);
+                }
+                .day-info{
+                    font-size: calc(.2rem + 3vh);
+                }
+            }
+        }
+    }
+    .ms-container{
+        width: 40%;
+        height: 100vh;
+        background-color: rgb(201, 206, 225, .8);
+        ul{
+            font-size: calc(.3rem + 1.9vh);
+            display: flex;
+            flex-direction: column;
+            gap: .6vh;
+        }
+        input{
+            background-color: rgb(201, 206, 225, 0);
+        }
+        .cities{
+            li{
+                width: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
